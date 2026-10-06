@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Continue to Rainier's private household app using your enrolled device and existing private connection.">
+  <title>Household access — Rainier</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap header"><a class="brand" href="index.html" aria-label="Rainier home"><span class="brand-mark" aria-hidden="true">R</span> Rainier</a><nav aria-label="Main navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main id="main" class="wrap access-main">
+    <p class="eyebrow">For invited household members</p>
+    <h1>Your household,<br>in its own space.</h1>
+    <p class="lead">Use the Rainier app already installed on your device, or continue to the private web app. Sign-in and household access happen there.</p>
+    <section class="access-card" aria-labelledby="web-access">
+      <h2 id="web-access">Continue to private Rainier</h2>
+      <p>Connect your enrolled device to the household's Tailscale network first. Rainier will then use its existing device setup and passkey sign-in.</p>
+      <a class="button" href="https://rainier-nas.tail03f55a.ts.net:8444/" rel="noreferrer">Open private Rainier <span aria-hidden="true">↗</span></a>
+      <p class="fine">This opens a separate private address. This public page doesn't collect account details, device tokens, or household information.</p>
+    </section>
+    <details><summary>The private app won't open</summary><p>Check that Tailscale is connected on this device and that your household invitation is complete. A private address may be unreachable from an unconnected device. Contact your household administrator if access still fails.</p></details>
+    <details><summary>I'm using a new device</summary><p>Ask your household administrator to enroll it using Rainier's existing setup flow. Enter any one-time setup code only in the private Rainier app. Keep setup codes and device tokens out of email and public pages.</p></details>
+    <details><summary>I'm not a household member</summary><p>Rainier is invite-only. This website doesn't create household accounts or provide public access to the private app. For general app or privacy questions, email <a href="mailto:contact@rainier.app">contact@rainier.app</a>.</p></details>
+    <a class="text-link back" href="index.html">← Back to the welcome page</a>
+  </main>
+  <footer class="wrap footer"><span class="brand">Rainier Family</span><nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:contact@rainier.app">Contact</a></nav><p>Private access stays in Rainier.</p></footer>
+</body>
+</html>
